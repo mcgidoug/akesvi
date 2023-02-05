@@ -13,7 +13,6 @@ import {
   Text,
 } from "./ui"
 import {
-  homepageSection,
   homepageBackgroundWrapper,
   homepageBackgroundImage,
 } from "./hero.css"
