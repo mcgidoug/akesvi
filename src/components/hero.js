@@ -12,10 +12,26 @@ import {
   Subhead,
   Text,
 } from "./ui"
+import {
+  homepageSection,
+  homepageBackgroundWrapper,
+  homepageBackgroundImage,
+} from "./hero.css"
 
 export default function Hero(props) {
   return (
     <Section>
+      <Container width="full" className={homepageBackgroundWrapper}>
+        <Container width="full">
+          {props.background && (
+            <GatsbyImage 
+              alt={props.background.alt}
+              image={getImage(props.background.gatsbyImageData)}
+              className={homepageBackgroundImage}
+            />
+          )}
+        </Container>
+      </Container>
       <Container>
         <Flex gap={4} variant="responsive">
           <Box width="half">
@@ -52,6 +68,11 @@ export const query = graphql`
       id
       href
       text
+    }
+    background {
+      id
+      gatsbyImageData
+      alt
     }
     image {
       id

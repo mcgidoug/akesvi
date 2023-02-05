@@ -98,6 +98,7 @@ exports.createSchemaCustomization = async ({ actions }) => {
     interface HomepageHero implements Node & HomepageBlock {
       id: ID!
       blocktype: String
+      background: HomepageImage
       heading: String!
       kicker: String
       subhead: String
@@ -351,6 +352,7 @@ exports.createSchemaCustomization = async ({ actions }) => {
       heading: String!
       kicker: String
       subhead: String
+      background: HomepageImage @link(by: "id", from: "background.asset._ref")
       image: HomepageImage @link(by: "id", from: "image.asset._ref")
       text: String
       links: [HomepageLink] @link

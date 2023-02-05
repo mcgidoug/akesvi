@@ -3,6 +3,7 @@ export default {
   title: "Homepage Hero",
   type: "document",
   fields: [
+    { title: "Background Image", name: "background", type: "image"},
     { title: "Heading", name: "heading", type: "string" },
     { title: "Kicker", name: "kicker", type: "string" },
     { title: "Subhead", name: "subhead", type: "string" },
