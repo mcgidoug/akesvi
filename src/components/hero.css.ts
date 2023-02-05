@@ -3,6 +3,7 @@ import { media } from "./ui.css"
 
 export const homepageBackgroundWrapper = style({
   position: "relative",
+  zIndex: -1,
   opacity: "10%",
   top: "-2rem",
 })
