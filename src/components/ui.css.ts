@@ -196,6 +196,7 @@ export const box = styleVariants({
 export const section = style({
   paddingTop: theme.space[4],
   paddingBottom: theme.space[4],
+  overflow: "hidden",
   "@media": {
     [media.small]: {
       paddingTop: theme.space[5],
