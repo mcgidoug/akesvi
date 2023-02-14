@@ -106,6 +106,10 @@ export function Section(props) {
   return <Box as="section" className={styles.section} {...props} />
 }
 
+export function Feature(props) {
+  return <Box as="iframe" className={styles.feature} {...props} />
+}
+
 export function Text({
   variant = "body",
   center = false,
