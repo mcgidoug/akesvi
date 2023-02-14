@@ -223,6 +223,14 @@ exports.createSchemaCustomization = async ({ actions }) => {
       content: [HomepageBlock]
     }
 
+    interface HomepageVideo implements Node & HomepageBlock {
+      id: ID!
+      blocktype: String
+      heading: String
+      text: String
+      url: String
+    }
+
     interface LayoutHeader implements Node {
       id: ID!
       navItems: [HeaderNavItem]
@@ -466,6 +474,15 @@ exports.createSchemaCustomization = async ({ actions }) => {
       content: [HomepageProduct]
     }
 
+    type SanityHomepageVideo implements Node & HomepageVideo & HomepageBlock
+      @dontInfer {
+      id: ID!
+      blocktype: String @blocktype
+      heading: String
+      text: String
+      url: String
+    }
+
     type SanityNavItem implements Node & NavItem & HeaderNavItem {
       id: ID!
       navItemType: String @navItemType(name: "Link")
@@ -582,4 +599,3 @@ exports.createPages = ({ actions }) => {
     component: require.resolve("./src/components/footer.js"),
   })
 }
-      

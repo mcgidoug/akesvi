@@ -20,6 +20,7 @@ import homepageStat from "./homepageStat"
 import homepageStatList from "./homepageStatList"
 import homepageProduct from "./homepageProduct"
 import homepageProductList from "./homepageProductList"
+import homepageVideo from "./homepageVideo"
 
 import navItem from "./navItem"
 import navItemGroup from "./navItemGroup"
@@ -36,7 +37,6 @@ import aboutStat from "./aboutStat"
 import aboutStatList from "./aboutStatList"
 import aboutProfile from "./aboutProfile"
 import aboutLeadership from "./aboutLeadership"
-import aboutLogoList from "./aboutLogoList"
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -61,6 +61,7 @@ export default createSchema({
     homepageStatList,
     homepageProduct,
     homepageProductList,
+    homepageVideo,
     // layout
     navItem,
     navItemGroup,
@@ -77,6 +78,5 @@ export default createSchema({
     aboutStatList,
     aboutProfile,
     aboutLeadership,
-    aboutLogoList,
   ]),
 })

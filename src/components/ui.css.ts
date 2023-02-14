@@ -205,6 +205,18 @@ export const section = style({
   },
 })
 
+export const feature = style({
+  marginTop: theme.space[4],
+  paddingLeft: theme.space[4],
+  paddingRight: theme.space[4],
+  "@media": {
+    [media.small]: {
+      paddingLeft: theme.space[5],
+      paddingRight: theme.space[5],
+    },
+  },
+})
+
 export const margin = styleVariants(
   {
     ...theme.space,
