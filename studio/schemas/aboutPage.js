@@ -19,6 +19,7 @@ export default {
             { type: "homepageProductList" },
             { type: "aboutLeadership" },
             { type: "homepageBenefitList" },
+            { type: "aboutLogoList" },
             { type: "homepageCta" },
           ],
         },

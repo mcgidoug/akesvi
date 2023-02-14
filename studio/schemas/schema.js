@@ -37,6 +37,7 @@ import aboutStat from "./aboutStat"
 import aboutStatList from "./aboutStatList"
 import aboutProfile from "./aboutProfile"
 import aboutLeadership from "./aboutLeadership"
+import aboutLogoList from "./aboutLogoList"
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -78,5 +79,6 @@ export default createSchema({
     aboutStatList,
     aboutProfile,
     aboutLeadership,
+    aboutLogoList,
   ]),
 })
